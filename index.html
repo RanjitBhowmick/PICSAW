@@ -1,0 +1,228 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+<title>
+PICSAW
+</title>
+<style>
+
+body
+{
+background-color:#383e56;
+color:white;
+margin:0px;
+}
+
+h1{
+text-align:center;
+font-family: 'Noto Sans JP', sans-serif;
+background-color:black;
+margin:0px;
+padding:1rem;
+}
+
+.banimg
+{
+height:40rem;
+width:100%;
+}
+
+h3{
+margin:0px;
+}
+
+.betimgdiv
+{
+display:block;
+}
+
+.floatleft
+{
+float:left;
+width:50%;
+}
+
+.floatright
+{
+float:right;
+width:50%;
+}
+
+.floatleft1
+{
+float:left;
+width:60%;
+}
+
+.floatright2
+{
+float:right;
+width:40%;
+}
+
+.floatleft3
+{
+float:left;
+width:40%;
+}
+
+.floatright4
+{
+float:right;
+width:60%;
+}
+
+.betterimg
+{
+height:20rem;
+width:100%;
+}
+
+.smallbanner
+{
+text-align:center;
+font-family: 'Noto Sans JP', sans-serif;
+background-color:black;
+margin:0px;
+}
+
+.contactusanchor
+{
+margin:0px;
+padding:30px;
+}
+.contactusimg
+{
+margin:0px;
+height:20px;
+width:20px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div>
+<h1>
+PICSAW
+</h1>
+</div>
+
+<div class="banimg">
+<img class="banimg" id="BannerImage" src="PIC1.jpeg">
+</div>
+
+<div class="smallbanner">
+<h3>
+WE ARE BETTER THAN BEST
+</h3>
+</div>
+
+<div class="betimgdiv">
+<div class="floatleft">
+<img class="betterimg" src="PIC5.jpeg">
+</div>
+<div class="floatright">
+<img class="betterimg" src="PIC6.jpeg">
+</div>
+</div>
+
+<div class="smallbanner">
+<h3>
+GET A FREE DEMO
+</h3>
+</div>
+
+<div>
+<div class="floatleft1">
+<img class="betterimg" src="PIC7.jpeg">
+</div>
+<div class="floatright2">
+<img class="betterimg" src="PIC9.jpg" id="floatright2img" onmouseover="floatright2mouseover()" onmouseleave="floatright2mouseleave()">
+</div>
+</div>
+
+
+<div>
+<div class="floatleft3">
+<img class="betterimg" id="floatleft3img" src="PIC10.jpg" onmouseover="floatleft3mouseover()" onmouseleave="floatleft3mouseleave()">
+</div>
+<div class="floatright4">
+<img class="betterimg" src="PIC8.jpeg">
+</div>
+</div>
+
+<div class="smallbanner">
+<h3>
+CONTACT US
+</h3>
+</div>
+
+<div class="smallbanner">
+<h6 style="margin:0px;">
+Ranjit Bhowmick
+</h6>
+</div>
+
+
+<div class="smallbanner" style="height:40px;padding:20px;">
+<a class="contactusanchor">
+<img class="contactusimg" src="whatsappicon.png">
+</a>
+<a class="contactusanchor">
+<img class="contactusimg" src="facebookicon.png">
+</a>
+<a class="contactusanchor">
+<img class="contactusimg" src="instagramicon.png">
+</a>
+</div>
+
+
+
+</body>
+<script>
+
+
+var images = ["PIC1.jpeg","PIC2.jpeg","PIC3.jpeg","PIC4.jpeg"];
+var i = 0;
+var renew = setInterval(function(){
+if(images.length == i)	
+{
+i = 0;
+}
+else {
+document.getElementById("BannerImage").src = images[i]; 
+i++;
+}
+},3000);
+
+
+
+function floatleft3mouseover()
+{
+document.getElementById("floatleft3img").src="PIC11.jpeg";
+}
+
+function floatleft3mouseleave()
+{
+document.getElementById("floatleft3img").src="PIC9.jpg";
+}
+
+function floatright2mouseover()
+{
+document.getElementById("floatright2img").src="PIC12.jpeg";
+}
+
+function floatright2mouseleave()
+{
+document.getElementById("floatright2img").src="PIC10.jpg";
+}
+
+
+
+
+
+</script>
+</html>
